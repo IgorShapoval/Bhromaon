@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Aleo";
+  src: url("./../fonts/Aleo/Aleo-Regular.woff2") format("woff2"), url("./../fonts/Aleo/Aleo-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("./../fonts/JosefinSans/JosefinSans-Bold.woff2") format("woff2"), url("./../fonts/JosefinSans/JosefinSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("./../fonts/JosefinSans/JosefinSans-Regular.woff2") format("woff2"), url("./../fonts/JosefinSans/JosefinSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("./../fonts/JosefinSans/JosefinSans-Light.woff2") format("woff2"), url("./../fonts/JosefinSans/JosefinSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.btn {
+  padding: 20px 32px;
+  font-size: 16px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #5373fd;
+  border: none;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.intro {
+  min-height: 862px;
+  background: url(./../img/IntroBg.png);
+  background-color: #5373fd;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.intro__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.08;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 295px;
+  margin-bottom: 8px;
+}
+.intro__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0.31em;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.intro__btn {
+  font-size: 14px;
+  padding: 16px 25px;
+  line-height: 1.43;
+  letter-spacing: 0.1em;
+}
+.intro__btn svg {
+  margin-right: 12px;
+}/*# sourceMappingURL=index.css.map */

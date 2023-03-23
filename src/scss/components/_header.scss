@@ -1,0 +1,61 @@
+.header {
+    &__intro {
+    }
+    &__body {
+    }
+    &__logo {
+    }
+    &__menu {
+    }
+}
+
+.intro {
+    min-height: 862px;
+    background: url(./../img/IntroBg.png);
+    background-color: #5373fd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__title {
+        font-weight: 700;
+        font-size: $fs-48;
+        line-height: 1.08;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 295px;
+        margin-bottom: 8px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: $fs-22;
+        line-height: 1.27;
+        letter-spacing: 0.31em;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &__form {
+    }
+    &__btn {
+        font-size: 14px;
+        padding: 16px 25px;
+        line-height: 1.43;
+        letter-spacing: 0.1em;
+
+        & svg {
+            margin-right: 12px;
+        }
+    }
+    &__input {
+    }
+    &__scroll {
+    }
+}
+
+.header-menu {
+    &__list {
+    }
+    &__item {
+    }
+    &__link {
+    }
+}

@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 300;
+	font-size: $fs-16;
+	color: $c-white;
+}

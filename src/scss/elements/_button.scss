@@ -1,0 +1,15 @@
+.btn {
+    padding: 20px 32px;
+    font-size: $fs-16;
+    font-family: "Aleo", serif;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $c-white;
+    background: $c-accent;
+    border: none;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    cursor: pointer;
+}

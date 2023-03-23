@@ -1,0 +1,17 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include breakpoint("sm") {
+        max-width: $breakpoint-xs;
+    }
+
+    @include breakpoint("lg") {
+        max-width: $breakpoint-md;
+    }
+
+    @include breakpoint("2xl") {
+        max-width: $breakpoint-xl;
+    }
+}
