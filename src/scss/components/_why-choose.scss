@@ -1,0 +1,105 @@
+.why-choose {
+    padding: 60px 0;
+    background: url(./../img/WhyBackground.png);
+    background-color: $c-dark-grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include breakpoint("lg") {
+        padding: 124px 0;
+    }
+    &__wrap {
+        @include breakpoint("lg") {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+    &__info {
+        @include breakpoint("lg") {
+            max-width: 550px;
+            padding-top: 68px;
+        }
+    }
+    &__title {
+        font-family: "Aleo", serif;
+        font-weight: 400;
+        font-size: $fs-36;
+        line-height: 1.11;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 19px;
+
+        @include breakpoint("lg") {
+            text-align: start;
+        }
+    }
+    &__text {
+        line-height: 1.75;
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        @include breakpoint("lg") {
+            text-align: start;
+        }
+
+        & p:first-child {
+            margin-bottom: 29px;
+        }
+
+        & p:last-child {
+            margin-bottom: 24px;
+
+            @include breakpoint("sm") {
+                margin-bottom: 35px;
+            }
+        }
+    }
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 37px;
+
+        @include breakpoint("sm") {
+            flex-wrap: nowrap;
+            margin-bottom: 34px;
+        }
+
+        @include breakpoint("lg") {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            margin-bottom: 0;
+        }
+
+        & img {
+            width: 258px;
+
+            @include breakpoint("sm") {
+                width: 100%;
+            }
+
+            @include breakpoint("lg") {
+                width: 350px;
+
+                &:first-child {
+                    margin-right: 35px;
+                }
+
+                &:last-child {
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        text-align: center;
+
+        @include breakpoint("lg") {
+            text-align: start;
+        }
+    }
+}

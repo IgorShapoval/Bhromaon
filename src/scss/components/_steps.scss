@@ -1,0 +1,54 @@
+.steps {
+    background-color: $c-dark-grey;
+    padding: 60px 0;
+    @include breakpoint("lg") {
+        padding: 122px 0 45px 0;
+    }
+
+    &__img {
+        display: none;
+        @include breakpoint("lg") {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__list {
+        @include breakpoint("lg") {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+        }
+    }
+    &__item {
+        padding-top: 12px;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: 60px;
+            @include breakpoint("lg") {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    &__icon {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 20px;
+
+        &_search {
+            color: $c-accent;
+        }
+        &_check-circle {
+            color: $c-red;
+        }
+        &_thumbs-up {
+            color: $c-blue;
+        }
+    }
+    &__text {
+        font-family: "Aleo", serif;
+        font-weight: 400;
+        font-size: $fs-36;
+        line-height: 1.11;
+        text-transform: capitalize;
+    }
+}

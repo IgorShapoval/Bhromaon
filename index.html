@@ -8,6 +8,7 @@
     <title>Bhromaon</title>
   </head>
   <body>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
     <header class="header">
       <section class="header__intro intro">
         <div class="container">
@@ -27,7 +28,7 @@
             </button>
           </form>
           <div class="intro__scroll">
-            <span>Scroll Down</span>
+            <div>Scroll Down</div>
             <svg class="icon icon-chevron-down">
               <use
                 xlink:href="./assets/img/icons/icons.svg#icon-chevron-down"
@@ -36,81 +37,115 @@
           </div>
         </div>
       </section>
-      <div class="container">
-        <div class="header__body">
-          <a class="header__logo logo">Bhromaon</a>
-          <nav class="header__menu header-menu">
-            <ul class="header-menu__list">
-              <li class="header-menu__item">
-                <a href="" class="header-menu__link">Who We Are</a>
-              </li>
-              <li class="header-menu__item">
-                <a href="" class="header-menu__link">What We Do</a>
-              </li>
-              <li class="header-menu__item">
-                <a href="" class="header-menu__link">Travel With Us</a>
-              </li>
-              <li class="header-menu__item">
-                <a href="" class="header-menu__link">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="header__nav">
+        <div class="container">
+          <div class="header__body">
+            <a class="header__logo logo">Bhromaon</a>
+            <nav
+              class="header__menu header-menu"
+              id="nav"
+              onclick="toggleMenu()"
+            >
+              <button
+                class="header__hamburger hamburger hamburger--3dx is-active"
+                type="button"
+                id="burger"
+                onclick="toggleMenu()"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+              <ul class="header-menu__list">
+                <li class="header-menu__item">
+                  <a href="#why-choose" class="header-menu__link">Who We Are</a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="#book-now" class="header-menu__link">What We Do</a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="#tourists" class="header-menu__link"
+                    >Travel With Us</a
+                  >
+                </li>
+                <li class="header-menu__item">
+                  <a href="#footer" class="header-menu__link">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+            <button
+              class="header__hamburger hamburger hamburger--3dx"
+              type="button"
+              id="burger"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="why-choose">
+      <section class="why-choose" id="why-choose">
         <div class="container">
           <div class="why-choose__wrap">
-            <h2 class="why-choose__title">Why Choose Us</h2>
-            <p class="why-choose__text">
-              Tion and dislike men who are so beguiled and demoralized by desire
-              by the charms of pleasure of the moment, so blinded by desire,
-              that they cannot foresee
-            </p>
-            <p class="why-choose__text">
-              Ddislike men who are so beguiled and demoralized by the charms of
-              pleasure of the moment, so blinded by desire, that.
-            </p>
-            <button class="btn">Explore Places</button>
-          </div>
-          <div class="why-choose__images">
-            <img src="./assets/img/Image1.jpg" alt="image" />
-            <img src="./assets/img/Image2.jpg" alt="image" />
+            <div class="why-choose__images">
+              <img src="./assets/img/Image1.jpg" alt="image" />
+              <img src="./assets/img/Image2.jpg" alt="image" />
+            </div>
+            <div class="why-choose__info">
+              <h2 class="why-choose__title">Why Choose Us</h2>
+              <div class="why-choose__text">
+                <p>
+                  Tion and dislike men who are so beguiled and demoralized by
+                  desire by the charms of pleasure of the moment, so blinded by
+                  desire, that they cannot foresee
+                </p>
+                <p>
+                  Ddislike men who are so beguiled and demoralized by the charms
+                  of pleasure of the moment, so blinded by desire, that.
+                </p>
+              </div>
+              <div class="why-choose__btn">
+                <button class="btn">Explore Places</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="steps">
         <div class="container">
+          <img class="steps__img" src="./assets/img/Line.png" alt="" />
           <ul class="steps__list">
             <li class="steps__item">
-              <svg class="icon icon-search">
+              <svg class="icon steps__icon steps__icon_search">
                 <use
                   xlink:href="./assets/img/icons/icons.svg#icon-search"
                 ></use>
               </svg>
-              <span class="steps__text">Search Places</span>
+              <div class="steps__text">Search Places</div>
             </li>
             <li class="steps__item">
-              <svg class="icon icon-check-circle">
+              <svg class="icon steps__icon steps__icon_check-circle">
                 <use
                   xlink:href="./assets/img/icons/icons.svg#icon-check-circle"
                 ></use>
               </svg>
-              <span class="steps__text">Select Places</span>
+              <div class="steps__text">Select Places</div>
             </li>
             <li class="steps__item">
-              <svg class="icon icon-thumbs-up">
+              <svg class="icon steps__icon steps__icon_thumbs-up">
                 <use
                   xlink:href="./assets/img/icons/icons.svg#icon-thumbs-up"
                 ></use>
               </svg>
-              <span class="steps__text">Book & Enjoy</span>
+              <div class="steps__text">Book & Enjoy</div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="book-now book-now_bg-hause">
+      <section class="book-now book-now_bg-hause" id="book-now">
         <div class="container">
           <div class="book-now__wrap">
             <h3 class="book-now__subtitle">Spain</h3>
@@ -120,13 +155,13 @@
               denouncing pleasure and praising pain was account born and I
               account will give you a complete account of the system
             </p>
-            <button type="button" class="btn">book now</button>
+            <button type="button" class="btn book-now__btn">book now</button>
           </div>
         </div>
       </section>
       <section class="book-now book-now_bg-sunset">
         <div class="container">
-          <div class="book-now__wrap">
+          <div class="book-now__wrap book-now__wrap_rigth">
             <h3 class="book-now__subtitle">Spain</h3>
             <h2 class="book-now__title">Grand Spain Madrid</h2>
             <p class="book-now__text">
@@ -134,11 +169,11 @@
               denouncing pleasure and praising pain was account born and I
               account will give you a complete account of the system
             </p>
-            <button type="button" class="btn">book now</button>
+            <button type="button" class="btn book-now__btn">book now</button>
           </div>
         </div>
       </section>
-      <section class="tourists">
+      <section class="tourists" id="tourists">
         <div class="container">
           <h2 class="tourists__title">What Our Tourists Say</h2>
           <div class="tourists__wrap">
@@ -147,28 +182,25 @@
             </div>
             <div class="tourists__info">
               <div class="tourists__name">Sam Sumon</div>
-              <div class="tourists__quotation">
+              <p class="tourists__text">
                 <svg class="icon icon-quote-left">
                   <use
                     xlink:href="./assets/img/icons/icons.svg#icon-quote-left"
                   ></use>
                 </svg>
-                <p class="tourists__text">
-                  But I must explain to you how all this mistaken idea of
-                  account to denouncinpleasure and praising pain But I must
-                  explain to you how all this mistaken idea of account to nai
-                  denouncing pleasure and praising pain was account born and I
-                  account will give you a complete account of the system was
-                  account born and I account will give you a nai the complete
-                  account of the system
-                </p>
-              </div>
+                But I must explain to you how all this mistaken idea of account
+                to denouncinpleasure and praising pain But I must explain to you
+                how all this mistaken idea of account to nai denouncing pleasure
+                and praising pain was account born and I account will give you a
+                complete account of the system was account born and I account
+                will give you a nai the complete account of the system
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <a href="#" class="footer__logo logo">Bhromaon</a>
         <div class="footer__text">Safe Travel Anywhere</div>
@@ -221,5 +253,16 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const burger = document.getElementById("burger");
+        burger.classList.toggle("is-active");
+        const overlay = document.getElementById("overlay");
+        overlay.classList.toggle("show");
+        const nav = document.getElementById("nav");
+        nav.classList.toggle("is-open");
+      }
+    </script>
   </body>
 </html>

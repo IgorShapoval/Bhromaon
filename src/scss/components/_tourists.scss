@@ -1,0 +1,68 @@
+.tourists {
+    padding: 60px 0 120px 0;
+    background: url(./../img/TouristsBg.png);
+    background-color: $c-dark-grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__title {
+        font-family: "Aleo", serif;
+        font-weight: 400;
+        font-size: $fs-36;
+        line-height: 1.11;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 60px;
+    }
+    &__wrap {
+        @include breakpoint("lg") {
+            display: flex;
+        }
+    }
+    &__photo {
+        @include breakpoint("sm") {
+            height: 336px;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+
+            @include breakpoint("sm") {
+                object-fit: cover;
+            }
+        }
+    }
+    &__info {
+        padding: 44px 56px 44px 61px;
+        background-color: $c-dark-grey;
+
+        @include breakpoint("sm") {
+            padding: 50px 52px 44px 61px;
+        }
+
+        @include breakpoint("lg") {
+            max-width: 640px;
+        }
+    }
+    &__name {
+        font-weight: 400;
+        font-size: $fs-20;
+        line-height: 1.4;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+
+        @include breakpoint("sm") {
+            margin-bottom: 14px;
+        }
+    }
+    &__text {
+        line-height: 1.75;
+        letter-spacing: 0.1em;
+
+        & svg {
+            width: 20px;
+            height: 20px;
+            color: $c-accent;
+        }
+    }
+}

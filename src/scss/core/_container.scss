@@ -1,7 +1,7 @@
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 18px;
 
     @include breakpoint("sm") {
         max-width: $breakpoint-xs;

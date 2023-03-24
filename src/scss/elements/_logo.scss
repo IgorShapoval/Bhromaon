@@ -1,0 +1,14 @@
+.logo {
+    display: inline-block;
+    font-weight: 700;
+    font-size: $fs-24;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $c-white;
+    transition: all 0.5s linear;
+
+    &:hover,
+    &:focus {
+        color: $c-red;
+    }
+}

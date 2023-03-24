@@ -12,4 +12,11 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.5s linear;
+
+    &:hover,
+    &:focus {
+        background: $c-red;
+        color: $c-black;
+    }
 }

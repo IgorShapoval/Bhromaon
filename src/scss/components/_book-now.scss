@@ -1,0 +1,54 @@
+.book-now {
+    padding: 120px 0;
+    &_bg-hause {
+        background: url(./../img/SpainBg1.png);
+        background-color: $c-dark-grey;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &_bg-sunset {
+        background: url(./../img/SpainBg2.png);
+        background-color: $c-dark-grey;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__wrap {
+        padding: 44px 32px;
+        background: rgba(35, 35, 35, 0.9);
+
+        @include breakpoint("lg") {
+            width: 550px;
+        }
+
+        &_rigth {
+            @include breakpoint("lg") {
+                margin-left: auto;
+            }
+        }
+    }
+    &__subtitle {
+        font-size: $fs-20;
+        line-height: 1.4;
+        letter-spacing: 0.1em;
+        margin-bottom: 16px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: $fs-20;
+        line-height: 1.4;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+    &__text {
+        line-height: 1.75;
+        letter-spacing: 0.1em;
+        margin-bottom: 28px;
+    }
+
+    &__btn {
+        padding: 20px 56px;
+    }
+}

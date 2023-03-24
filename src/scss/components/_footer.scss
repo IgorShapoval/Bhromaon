@@ -1,0 +1,42 @@
+.footer {
+    padding: 86px 0;
+    background-color: $c-black;
+    text-align: center;
+    &__logo {
+        margin-bottom: 11px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: $fs-14;
+        line-height: 1.43;
+        letter-spacing: 0.2em;
+        margin-bottom: 20px;
+    }
+    &__list {
+    }
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    &__item {
+    }
+    &__link {
+        display: block;
+        width: 36px;
+        height: 32px;
+        transition: all 0.5s linear;
+        & svg {
+            width: 36px;
+            height: 32px;
+            color: $c-white;
+        }
+
+        & svg:hover,
+        & svg:focus {
+            color: $c-blue;
+        }
+    }
+}
