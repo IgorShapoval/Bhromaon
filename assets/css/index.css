@@ -301,6 +301,12 @@ input:not([type=checkbox], [type=radio]):focus {
   top: 16px;
   right: 18px;
 }
+.header__hamburger_close {
+  display: none;
+}
+.header__hamburger_close.is-active {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .header__hamburger {
     display: none;
